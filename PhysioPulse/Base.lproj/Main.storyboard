@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DzS-JZ-scK">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhysioPulse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform.path.ecg" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-7S-8Hx">
+                                <rect key="frame" x="16" y="61" width="49" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="tableCellGroupedBackgroundColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhysioPulse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-02-XKX">
+                                <rect key="frame" x="77" y="408" width="248.33333333333337" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1215686351" green="0.29803922770000002" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hcY-02-XKX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DC4-Gc-iFa"/>
+                            <constraint firstItem="hcY-02-XKX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JpC-4c-e6E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0bC-i4-7rI"/>
+                    <connections>
+                        <outlet property="appLabel" destination="hcY-02-XKX" id="2Sy-EL-E9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="-29.51945080091533"/>
+        </scene>
+        <!--Role View Controller-->
+        <scene sceneID="GiO-wP-mga">
+            <objects>
+                <viewController restorationIdentifier="RoleViewController" storyboardIdentifier="RoleViewController" id="EIv-1Z-4U5" customClass="RoleViewController" customModule="PhysioPulse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="RoleViewController" id="LZz-U2-rVR">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform.path.ecg" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-L7-nD8">
+                                <rect key="frame" x="16" y="61" width="49" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="tableCellGroupedBackgroundColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-rR-0rG">
+                                <rect key="frame" x="77" y="332" width="248.33333333333337" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhysioPulse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIg-e4-dXq">
+                                        <rect key="frame" x="0.0" y="0.0" width="248.33333333333334" height="57.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue as" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-KE-fja">
+                                        <rect key="frame" x="0.0" y="77.333333333333314" width="248.33333333333334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idf-jE-YHR">
+                                        <rect key="frame" x="0.0" y="121.3333333333333" width="248.33333333333334" height="34.333333333333329"/>
+                                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Patient"/>
+                                        <connections>
+                                            <segue destination="Sjs-xw-UOz" kind="show" id="Vvl-zv-FC0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-OK-SEy">
+                                        <rect key="frame" x="0.0" y="175.66666666666669" width="248.33333333333334" height="34.333333333333343"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Physiotherapist"/>
+                                        <connections>
+                                            <segue destination="3gI-RO-ard" kind="show" id="PSN-r7-ydy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CAa-TU-mhz"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.29803922770000002" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <accessibility key="accessibilityConfiguration" identifier="RoleViewController"/>
+                        <constraints>
+                            <constraint firstItem="Plc-rR-0rG" firstAttribute="centerY" secondItem="LZz-U2-rVR" secondAttribute="centerY" id="682-Aw-Dcr"/>
+                            <constraint firstItem="Plc-rR-0rG" firstAttribute="centerX" secondItem="LZz-U2-rVR" secondAttribute="centerX" id="TlO-8y-xtD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VrD-PA-3xP"/>
+                    <connections>
+                        <outlet property="appLabel" destination="zIg-e4-dXq" id="eaT-up-0AR"/>
+                        <outlet property="continueAs" destination="dcL-KE-fja" id="z7Z-GO-inW"/>
+                        <outlet property="patientButton" destination="Idf-jE-YHR" id="z4Q-ig-Hdi"/>
+                        <outlet property="physioButton" destination="eRd-OK-SEy" id="XCR-GP-yMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oh-O9-80o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5256.7164179104475" y="-38.443935926773456"/>
+        </scene>
+        <!--Patient View Controller-->
+        <scene sceneID="Iwm-eU-gFQ">
+            <objects>
+                <viewController id="Sjs-xw-UOz" customClass="PatientViewController" customModule="PhysioPulse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6p5-1E-zHD">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-h8-F3g">
+                                <rect key="frame" x="44" y="310" width="314.33333333333331" height="254"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhysioPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUL-AG-gqO">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="57.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every steps towards recovey coutns" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qo6-sO-o8Y">
+                                        <rect key="frame" x="0.0" y="77.333333333333314" width="314.33333333333331" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay steady, Stay Strong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rq-36-XbB">
+                                        <rect key="frame" x="0.0" y="121.33333333333331" width="314.33333333333331" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrJ-0I-mdq">
+                                        <rect key="frame" x="0.0" y="165.33333333333331" width="314.33333333333331" height="34.333333333333343"/>
+                                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyP-9S-whF">
+                                        <rect key="frame" x="0.0" y="219.66666666666663" width="314.33333333333331" height="34.333333333333343"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="SignUp"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PF6-9C-dSy"/>
+                        <color key="backgroundColor" red="0.1215686351" green="0.29803922770000002" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9C8-h8-F3g" firstAttribute="centerY" secondItem="6p5-1E-zHD" secondAttribute="centerY" id="3xz-P6-kVV"/>
+                            <constraint firstItem="9C8-h8-F3g" firstAttribute="centerX" secondItem="6p5-1E-zHD" secondAttribute="centerX" id="8WD-kl-rsh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="browser" id="JcZ-qM-bk5"/>
+                    <connections>
+                        <outlet property="appLabel" destination="XUL-AG-gqO" id="20X-kv-wpt"/>
+                        <outlet property="loginButton" destination="RrJ-0I-mdq" id="59x-jm-sYl"/>
+                        <outlet property="signUpButton" destination="eyP-9S-whF" id="yxI-nt-CPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCE-aN-bhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6307.4626865671635" y="-264.30205949656749"/>
+        </scene>
+        <!--Physio View Controller-->
+        <scene sceneID="hqP-3z-vNF">
+            <objects>
+                <viewController id="3gI-RO-ard" customClass="PhysioViewController" customModule="PhysioPulse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZ7-TC-7g3">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TbV-DP-nz3">
+                                <rect key="frame" x="77" y="310" width="248.33333333333337" height="254"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhysioPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-by-ddK">
+                                        <rect key="frame" x="0.0" y="0.0" width="248.33333333333334" height="57.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heal, move, thrive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5k-Tx-ysa">
+                                        <rect key="frame" x="0.0" y="77.333333333333314" width="248.33333333333334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empowering lives, one step." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFw-Fc-new">
+                                        <rect key="frame" x="0.0" y="121.33333333333331" width="248.33333333333334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnP-uR-TGO">
+                                        <rect key="frame" x="0.0" y="165.33333333333331" width="248.33333333333334" height="34.333333333333343"/>
+                                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbl-N6-et8">
+                                        <rect key="frame" x="0.0" y="219.66666666666663" width="248.33333333333334" height="34.333333333333343"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="SignUp"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VpQ-qQ-i9W"/>
+                        <color key="backgroundColor" red="0.1215686351" green="0.29803922770000002" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TbV-DP-nz3" firstAttribute="centerY" secondItem="tZ7-TC-7g3" secondAttribute="centerY" id="IZr-a2-zVS"/>
+                            <constraint firstItem="TbV-DP-nz3" firstAttribute="centerX" secondItem="tZ7-TC-7g3" secondAttribute="centerX" id="ngs-PU-9sZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pDP-08-Ren"/>
+                    <connections>
+                        <outlet property="appLabel" destination="kn5-by-ddK" id="jOk-lS-7lL"/>
+                        <outlet property="loginButton" destination="dnP-uR-TGO" id="Ojv-Oa-Wcu"/>
+                        <outlet property="signUpButton" destination="Jbl-N6-et8" id="nhc-Z0-aBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaL-w7-wRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6307.4626865671635" y="447.5972540045766"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="my5-fH-sR4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DzS-JZ-scK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5gl-8G-cXk">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zco-uT-TAy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRB-Sb-Ugx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2380.5970149253731" y="-29.51945080091533"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e1T-vY-GFg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJX-cJ-t1C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K2f-Lc-vOA">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EIv-1Z-4U5" kind="relationship" relationship="rootViewController" id="xJv-dI-V0r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2u4-b8-0mh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4337.313432835821" y="-38.443935926773456"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="waveform.path.ecg" catalog="system" width="128" height="125"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
